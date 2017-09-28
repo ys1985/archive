@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot --inline --progress --colors",
+    "start": "webpack-dev-server --progress --colors",
     "build": "webpack --progress --colors"
   },
   "repository": {
@@ -38,10 +38,11 @@
     "file-loader": "^0.8.4",
     "style-loader": "^0.12.4",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.0",
+    "webpack-dev-server": "^1.16.5",
     "webpack-hot-middleware": "^2.2.0"
   },
   "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "classnames": "^2.1.2",
     "fbjs": "^0.3.2",
     "material-ui": "^0.13.0",

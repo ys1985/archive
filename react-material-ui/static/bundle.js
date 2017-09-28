@@ -20115,6 +20115,10 @@
 
 	var _componentsMainSection2 = _interopRequireDefault(_componentsMainSection);
 
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var App = (function (_Component) {
 	  _inherits(App, _Component);
 
@@ -20127,17 +20131,17 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      return React.createElement(
+	      return _react2['default'].createElement(
 	        'div',
 	        null,
-	        React.createElement(_componentsHeader2['default'], null),
-	        React.createElement(_componentsMainSection2['default'], null)
+	        _react2['default'].createElement(_componentsHeader2['default'], null),
+	        _react2['default'].createElement(_componentsMainSection2['default'], null)
 	      );
 	    }
 	  }]);
 
 	  return App;
-	})(Component);
+	})(_react.Component);
 
 	exports['default'] = App;
 	module.exports = exports['default'];
@@ -47043,7 +47047,7 @@
 	        _react2['default'].createElement(
 	          'h1',
 	          null,
-	          'Progress Component'
+	          'Progress Component / 読み込みアニメーション'
 	        ),
 	        _react2['default'].createElement(_materialUi.CircularProgress, { mode: 'indeterminate', size: 1.5 }),
 	        _react2['default'].createElement(_materialUi.CircularProgress, { mode: 'indeterminate', color: "red", size: 2 }),
@@ -47051,20 +47055,20 @@
 	        _react2['default'].createElement(
 	          'h1',
 	          null,
-	          'Tab Component'
+	          'Tab Component / タブ切り替え'
 	        ),
 	        _react2['default'].createElement(
 	          _materialUi.Tabs,
 	          null,
-	          _react2['default'].createElement(_materialUi.Tab, { label: 'Tab One', value: '0' }),
-	          _react2['default'].createElement(_materialUi.Tab, { label: 'Tab Two', value: '1' }),
-	          _react2['default'].createElement(_materialUi.Tab, { label: 'Tab Three', value: '2' })
+	          _react2['default'].createElement(_materialUi.Tab, { label: 'タブ1', value: '0' }),
+	          _react2['default'].createElement(_materialUi.Tab, { label: 'タブ2', value: '1' }),
+	          _react2['default'].createElement(_materialUi.Tab, { label: 'タブ3', value: '2' })
 	        ),
 	        _react2['default'].createElement('br', null),
 	        _react2['default'].createElement(
 	          'h1',
 	          null,
-	          'DatePicker Component'
+	          'DatePicker Component / カレンダー日付入力'
 	        ),
 	        _react2['default'].createElement(_materialUi.DatePicker, { hintText: 'Portrait Dialog' }),
 	        _react2['default'].createElement('br', null)
