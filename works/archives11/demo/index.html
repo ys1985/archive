@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>株式会社JDSound</title>
+<meta content="宮城県,仙台市,音響機器,設計開発,音楽解析,組み込み向けオーディオ,JDSound,GODJ" name="keywords" />
+<meta content="音響機器の設計開発、音楽解析は株式会社JDSoundへ" name="description" />
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.fadethis.js"></script>
+<!--<script type="text/javascript" src="js/video_contents.js"></script>-->
+
+<script type="text/javascript">
+$(function(){
+	$('#header').css({top:"-58px"});
+	$(window).fadeThis();
+	$(window).scroll(function () {
+	        var winTop = $(this).scrollTop();
+			var service_section_top = $('.godj_section').offset().top;
+
+	        if (winTop > service_section_top) {
+	        	$("#header").stop().animate({'top':'0px'},200,"swing")
+
+	       	}
+		   	if (winTop < service_section_top) {
+		   		$("#header").stop().animate({'top':'-58px'},200,"swing")
+
+		   	}
+	    });
+	$('.news_section .news_txt').load('/news/news_top.html');
+
+})
+
+</script>
+
+</head>
+
+<body id="pageTop">
+<div id="header" class="index_header">
+	<div class="inner clearfix">
+		<h1 class="header_logo"><a href="./"><img src="img/JD_SOUND_color.svg" width="175" height="48" alt="JD SOUND The Professional audio company"/></a></h1>
+        <ul class="nav">
+            <li><a class="smoothscroll" href="#pageTop">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a class="smoothscroll" href="#service">SERVICE</a></li>
+            <li><a class="smoothscroll" href="#company">COMPANY</a></li>
+            <li><a class="smoothscroll" href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="video_container">
+  <div class="main_svg_set">
+      <div class="main_logo"><img src="img/JD_SOUND.svg"></div>
+      <div class="en_main_title"><img src="img/en_main_title.svg"></div>
+  </div>
+  <video id="myVideo" class="video_src video" autobuffer autoplay loop>
+    <source src="vids/home_video.mp4">
+    <source src="vids/home_video.ogv">
+    <source src="vids/home_video.webm">
+  </video>
+</div>
+<div class="news_section">
+    <div class="inner">
+        <p class="news_ttl"><img src="img/news_top_ttl.gif" width="86px" height="26px"></p>
+        <p class="news_txt"></p>
+        <p class="news_link"><a href="news.html"><img src="img/news_link.svg"></a></p>
+    </div>
+</div>
+
+<div class="godj_section">
+	<div class="inner">
+		<div class="slide-right" data-plugin-options='{"speed":1000, "distance":100,"offset":200,"reverse":false}'><div class="godj"><img src="img/godj.png" alt=""></div></div>
+        <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":10,"offset":0,"reverse":false}'><div class="godj_logo"><img src="img/godj_logo.png"></div></div>
+    	<div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":0,"offset":0,"reverse":false}'><div class="godj_txt"><img src="img/godj_txt.gif" width="347" height="74" alt="世界初完全自立型"></div></div>
+        <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":0,"offset":0,"reverse":false}'><div class="godj_btn"><a class="rollover" href="http://jp.monstergodj.com/" target="_blank"><img src="img/godj_btn.gif" width="200" height="40"></a></div></div>
+    </div>
+</div>
+
+<div id="service" class="service_section">
+	 <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'><h2 class="section_ttl"><span class="border"></span><img src="img/service_ttl.svg"></h2></div>
+     <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'><h3 class="readtxt">JD Soundは未来に向けたオーディオ機器の開発と技術研究に取り組み、<br>新たな分野に挑戦し続ける、デジタルオーディオ技術のリーディング・カンパニーです。</h3></div>
+
+    <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'>
+    <div class="service_col">
+    	<div class="txt flt_l">
+        	<h3 class="ttl">デジタルオーディオ機器の設計・開発</h3>
+            <p>弊社のメイン事業は携帯音楽プレーヤーやカラオケ機器等のデジタルオーディオ機器の設計と開発です。 回路設計から部品選定、筐体デザイン、ソフトウェア開発まで一貫してサポート致します。</p>
+            <p>弊社初の製品となりましたポータブルＤＪ機器「GODJ」は現在日本国内はもちろんアジア、アメリカ、ヨーロッパ等世界各国で販売され、非常に高い評価を得ています。</p>
+            <p>弊社技術の特徴は低消費電力と高音質。「GODJ」は２つのスクリーンと多彩な再生機能を搭載しながらも12時間以上の連続再生時間を達成し、またポータブルオーディオ機器としては最高レベルの１００ｄＢのＳＮ比を実現しました。</p>
+            <p>エフェクタ、ゲーム機、学習機などの開発の実績もございますので、お気軽にお問い合わせ下さい。</p>
+        </div>
+        <div class="ph flt_r"><img src="img/service01_ph.jpg" width="400" height="260" alt=""/></div>
+    </div>
+    </div>
+
+    <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'>
+    <div class="service_col">
+    	<div class="txt flt_r">
+        	<h3 class="ttl">デジタルオーディオ技術のライセンス販売</h3>
+            <p>これまでの開発で培って参りましたユニークなデジタルオーディオライブラリを、ライセンス販売という形で提供しています。 弊社が独自開発したライブラリはメモリ使用量が少なく、また必要とされる動作周波数が極めて低いため、リソースの限られた既存製品にアドオン的に組み込む事が可能です。</p>
+            <p>新たなサウンドエフェクトや解析機能をソフトウェアとして組み込む事で、ハードウェア構成を変えずに製品のバージョンアップを図ることができます。</p>
+            <p>【現在提供可能なライブラリ】<br>
+・ リアルタイムＢＰＭ＆ビート解析<br>
+・ エフェクト（フェイザー、フランジャー、ディレイ、コンプレッサー等）<br>
+・ デジタルクロスフェーダ<br>
+・ オートＤＪ（全自動ミックス機能）</p>
+        </div>
+        <div class="ph flt_l"><img src="img/service02_ph.jpg" width="400" height="260" alt=""/></div>
+    </div>
+    </div>
+
+    <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'>
+    <div class="service_col">
+    	<div class="txt flt_l">
+        	<h3 class="ttl">デジタルオーディオ技術の研究</h3>
+            <p>上記２つの事業を支える技術開発に加え、常に新しいデジタルオーディオ技術の研究を行っています。 デジタルオーディオの分野で十年以上の実績のあるエンジニア達が、ＢＰＭ＆ビート解析、エフェクタ設計、デジタルオーディオコンテンツ制作などに日々取り組んでおります。<br>
+デジタルオーディオに関する受託開発も承りますのでお気軽にご相談下さい。</p>
+        </div>
+        <div class="ph flt_r"><img src="img/service03_ph.jpg" width="400" height="260" alt=""/></div>
+    </div>
+    </div>
+
+</div>
+
+<div id="company" class="company_section">
+	<div class="section_inner">
+	<div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'><h2 class="section_ttl"><span class="border"></span><img src="img/company_ttl.svg"></h2></div>
+    <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'>
+    <div class="company_info clearfix">
+    	<div class="flt_l">
+        	<table>
+            	<tr>
+            		<td class="list_ttl">商号</td>
+                    <td>株式会社JDSound</td>
+                </tr>
+                <tr>
+            		<td class="list_ttl">代表取締役</td>
+                    <td>宮崎晃一郎</td>
+                </tr>
+                <tr>
+            		<td class="list_ttl">資本金</td>
+                    <td>300万円</td>
+                </tr>
+                <tr>
+            		<td class="list_ttl">設立日</td>
+                    <td>2012年2月2日</td>
+                </tr>
+                <tr>
+            		<td class="list_ttl">事業内容</td>
+                    <td>デジタル音楽機器の設計 開発 販売</td>
+                </tr>
+            </table>
+        </div>
+        <div class="flt_r">
+        	<table>
+            	<tr>
+            		<td class="list_ttl">所在地</td>
+                    <td>〒980-0802<br>宮城県仙台市青葉区二日町13-18ステーションプラザビル6F</td>
+                </tr>
+                <tr>
+            		<td class="list_ttl">TEL</td>
+                    <td>022-725-0009</td>
+                </tr>
+                <tr>
+            		<td class="list_ttl">アクセス</td>
+                    <td>仙台市地下鉄南北線北四番丁駅から徒歩1分</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'><div class="access-map" id="map"></div></div>
+</div>
+
+<div id="contact" class="contact_section">
+	<div class="section_inner">
+	<div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'><h2 class="section_ttl"><span class="border"></span><img src="img/contact_ttl.svg"></h2></div>
+    <div class="slide-bottom" data-plugin-options='{"speed":1000, "distance":50,"offset":200,"reverse":false}'>
+        <table class="contact_table">
+            <td class="ttl">お問い合わせはこちらまで</td>
+            <td class="tell">
+                <table>
+                    <tr><td width="70px">E-mail：</td><td><a href="m&#97;i&#108;t&#111;:&#105;&#110;f&#111;@&#106;&#100;&#115;&#111;&#117;&#110;&#100;&#46;&#99;&#111;.&#106;&#112;">&#105;&#110;f&#111;@&#106;&#100;&#115;&#111;&#117;&#110;&#100;&#46;&#99;&#111;.&#106;&#112;</a></td></tr>
+                    <tr><td width="70px">TEL：</td><td>022-725-0009</td></tr>
+                </table>
+
+            </td>
+        </table>
+    </div>
+    </div>
+</div>
+
+<div id="pagetopBtn"><a class="smoothscroll" href="#pageTop"></a></div>
+<div id="footer"><p class="copyright">Copyright &copy; 2015 株式会社JDSound All rights reserved.</p></div>
+
+
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script>
+    var point = new google.maps.LatLng(38.2717709,140.8685652);
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: point,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: false,
+        scrollwheel: false
+
+    });
+
+    var icon = new google.maps.MarkerImage(
+        'img/map-marker.png',
+        new google.maps.Size(159,86),
+        new google.maps.Point(0,0),
+        new google.maps.Point(70,86)
+    );
+
+    var marker = new google.maps.Marker({
+        position: point,
+        map: map,
+        icon: icon,
+        title: 'JDSound'
+
+    });
+
+    var sampleType = new google.maps.StyledMapType([{
+        "stylers": [
+            { "saturation": -100 },
+            { "visibility": "Visibility" },
+            { "lightness": 0 }
+        ]
+
+    }], { name: 'jdsound' });
+    map.mapTypes.set('sample', sampleType);
+    map.setMapTypeId('sample');
+
+    $(window).resize(function() {
+    	var center = map.getCenter();
+    	google.maps.event.trigger(map, 'resize');
+    	map.setCenter(center);
+
+    });
+</script>
+
+
+</body>
+</html>

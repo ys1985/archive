@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>株式会社JDSound</title>
+<meta content="宮城県,仙台市,音響機器,設計開発,音楽解析,組み込み向けオーディオ,JDSound,GODJ" name="keywords" />
+<meta content="音響機器の設計開発、音楽解析は株式会社JDSoundへ" name="description" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/common_sp.css">
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.fadethis.js"></script>
+<script type="text/javascript" src="js/common_sp.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$('.moreinfo_Btn').click(function() {
+			$('.news_list ul').children().each(function(i) {
+				 if(i < count) { $(this).fadeIn("slow")}} );
+				 if(max_count <= count){ $('.moreinfo_Btn').hide(); }
+				 count = count + 10; 
+				 });
+				 			
+		var max_count = 0;
+		var count = 10;
+	
+		$('.news_list .news_inner').load('/news/news_data.html',function(){
+			max_count = $('.news_list ul li').size();
+			$('.news_list ul').children().hide();
+			$('.moreinfo_Btn').click();	
+		});
+		
+	})
+</script>
+
+</head>
+
+<body id="pageTop">
+<div id="header" class="contents_header">
+	<div class="clearfix header_bar">
+        <h1 class="header_logo"><a href="/"><img src="img/JD_SOUND_color.svg" alt="JD SOUND The Professional audio company"></a></h1>
+        <div class="menu_ico"><img src="img/sp_menu.svg"></div>
+    </div>
+    <div class="menu_wrapper">
+        <ul class="menu_list">
+            <li><a class="smoothscroll" href="index.html#pageTop">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a class="smoothscroll" href="index.html#service">SERVICE</a></li>
+            <li><a class="smoothscroll" href="index.html#company">COMPANY</a></li>
+            <li><a class="smoothscroll" href="index.html#contact">CONTACT</a></li>
+        </ul>
+        <p class="close_btn">×&nbsp;CLOSE</p>
+    </div>
+</div>
+
+<div id="contents_wrapper">
+	<h2 class="section_ttl"><span class="border"></span><img src="img/news_ttl.svg"></h2>
+    <div class="news_list">
+    	<div class="news_inner">
+        	
+        </div>
+        <div class="moreinfo_Btn"></div>        
+    </div>
+</div>
+<!-- /contents_wrapper -->
+<div id="pagetopBtn"><a class="smoothscroll" href="#pageTop"></a></div>
+<div id="footer"><p class="copyright">Copyright &copy; 2015 株式会社JDSound All rights reserved.</p></div>
+</body>
+</html>
