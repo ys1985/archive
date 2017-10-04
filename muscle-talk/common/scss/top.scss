@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+@import "compass/css3";
+
+@import "mixin";
+
+body {
+	background: url(top/bg.png) 581px -10px no-repeat;
+	color: #7b7b7b;
+}
+#wrap {
+	position: relative;
+}
+
+#side {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 209px;
+	height: 100%;
+	background: #3fc500 url(top/bg_side.png) 0 0 repeat-x;
+	z-index: 2;
+	h1 {
+		padding-top: 27px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	#gnav {
+		margin-left: 40px;
+		margin-bottom: 40px;
+		li {
+			margin-bottom: 12px;
+			a {
+				color: #fff;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.listLink {
+		margin-left: 40px;
+		margin-bottom: 40px;
+		li {
+			margin-bottom: 12px;
+			a {
+				color: #fff;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.listSocial {
+		margin-left: 40px;
+		margin-bottom: 35px;
+		li {
+			float: left;
+			&.line {
+				width: 94px;
+			}
+			&.fk {
+				width: 120px;
+				clear: left;
+			}
+			&.twitter {
+				width: 107px;
+				clear: left;
+			}
+			&.google {
+				width: 77px;
+				clear: left;
+			}
+			&.bing {
+				width: 50px;
+			}
+		}
+	}
+	.btnStart {
+		margin-left: 40px;
+		margin-bottom: 40px;
+	}
+	.logoGmobb {
+		margin-left: 40px;
+	}
+}
+
+#visual {
+	position: relative;
+	z-index: 100;
+	height: 1161px;
+	margin-left: 165px;
+	.mans {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	.btnStart {
+		position: absolute;
+		left: 285px;
+		bottom: 131px;
+		a {
+			@include opacity(0);
+			&:hover, &:focus {
+				@include opacity(1);
+			}
+		}
+	}
+	.title {
+		position: absolute;
+		left: 99px;
+		top: 46px;
+	}
+	.text {
+		position: absolute;
+		left: 73px;
+		top: 287px;
+	}
+}
+
+#main {
+	padding-top: 35px;
+	margin-left: 308px;
+	width: 870px;
+}
+
+#footer {
+	margin-left: 308px;
+	margin-top: 30px;
+	border-top: 1px solid #bebebe;
+	padding: 30px 0;
+	.copyright {
+		font-size: 10px;
+	}
+}
+
+#imageMap {
+	width: 491px;
+	height: 1029px;
+	float: left;
+	background: url(top/bg_img-map.png) 0 0 no-repeat;
+}
+
+.lytCol2 {
+	.image {
+		width: 556px;
+		float: left;
+		text-align: center;
+		&.left {
+			text-align: left;
+		}
+		&.right {
+			text-align: right;
+		}
+	}
+	.contents {
+		width: 314px;
+		float: right;
+		.texts {
+			width: 270px;
+		}
+	}
+	#overImg01 {
+		position: relative;
+		height: 577px;
+		img {
+			position: absolute;
+			top: 0;
+			left: -70px;
+		}
+	}
+}
+
+.section {
+	margin-bottom: 230px;
+}
+
+.contents {
+	.titles {
+		margin-bottom: 20px;
+	}
+	.texts {
+		margin-bottom: 20px;
+	}
+
+	.imgs {
+		margin-bottom: 20px;
+	}
+
+	.btns {
+		margin-bottom: 20px;
+	}
+	.imgTop {
+		width: 768px;
+		text-align: center;
+	}
+}
+
+.listDef {
+	dt {
+		margin-bottom: 10px;
+	}
+	dd {
+		margin-bottom: 25px;
+	}
+}
+
+/*style adjust*/
+@each $adjust in b, t, l, r {
+	@for $i from 0 through 40 {
+		.m#{$adjust}#{$i * 5} {
+			@if $adjust == b {
+				margin-bottom: #{$i * 5}px !important;
+			} @else if $adjust == t {
+				margin-top: #{$i * 5}px !important;
+			} @else if $adjust == l {
+				margin-left: #{$i * 5}px !important;
+			} @else if $adjust == r {
+				margin-right: #{$i * 5}px !important;
+			}
+		}  
+	}
+
+} 
+
+/* ===== Clear Fix ===== */
+
+.lytCol2,
+.listSocial {
+	*zoom: 1;
+	&:after {
+		content:"";
+		height:0;
+		display:block;
+		clear:both;
+	}
+}
+
+p.pageTop {
+	position: fixed;
+	right: 30px;
+	/*bottom: 68px;*/
+	bottom: 0;
+	a {
+		display: block;
+		height: 156px;
+		overflow: hidden;
+	}
+}
+
+#moving {
+	position: fixed;
+	right: 30px;
+	bottom: 68px;
+	display: none;
+	z-index:10;
+}
+
+#moving img {
+	display: block;
+}
+
+/* ===== Pop Up ===== */
+
+#opacity {
+	@include opacity(0.7);
+	background: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+}
+
+#mikesselect {
+	display: none;
+	height: 701px;
+	width: 1000px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -350px 0 0 -500px;
+	background: #3fc600;
+	z-index: 100;
+	.title {
+		img {
+			display: block;
+		}
+	}
+
+	.inner {
+		width: 986px;
+		height: 607px;
+		background: #fff;
+		margin: 0 auto;
+		position: relative;
+		.loading {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: -33px 0 0 -33px;
+			display: none;
+		}
+	}
+}
+

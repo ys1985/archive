@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@mixin content {
+	content:"";
+	display:block;
+	position:absolute;
+}
+
+
+@mixin bg-stripe($mobile: false) {
+	background-image:url("img/stripe.png");  
+	background-repeat:no-repeat;
+	@if $mobile {
+		-moz-background-size:200px 200px;
+		-webkit-background-size:200px 200px;
+		background-size:200px 200px;
+	}
+}
+
+@mixin bg-size($image, $size: 100% 100%) {
+	background-image: url(#{$image});
+	background-repeat: no-repeat;
+	-moz-background-size: $size;
+	-webkit-background-size: $size;
+	background-size: $size;
+}

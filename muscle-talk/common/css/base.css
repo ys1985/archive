@@ -1,0 +1,67 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; }
+
+header, nav, footer { display: block; }
+
+body { font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif; color: #222; font-size: 1em; line-height: 1.5; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: #ffff9e; color: #3c3c3c; -webkit-text-size-adjust: 100%; }
+body a { -webkit-tap-highlight-color: rgba(245, 78, 150, 0.3); }
+
+ul { list-style-type: none; }
+
+ol { list-style-type: decimal; }
+
+img { border: 0; line-height: 1; }
+
+a { color: #2f76b9; text-decoration: none; }
+a:visited { color: #5140b8; }
+a:hover, a:focus { color: #2a95ff; text-decoration: underline; }
+a:active { color: #006599; }
+a img { border: 0; }
+
+em, strong, cite { font-style: normal; }
+
+strong { font-weight: bold; }
+
+abbr { border: 0; }
+
+/* ===== Text ===== */
+section + section { margin: 30px 0; }
+
+h1 + section, h2 + section, p + section { margin: 0 0 30px; }
+
+p { /*font-size:0.8125em;*/ }
+
+pre { overflow: auto; margin: 0 15px 15px; padding: 15px; border: 1px solid #b9b9b9; border-radius: 3px; font-size: 0.8125em; }
+
+blockquote { margin: 0 15px 15px; padding: 15px 0 0; border: 1px solid #b9b9b9; border-radius: 3px; }
+
+blockquote cite { display: block; margin: 0 15px 15px; font-size: 0.8125em; text-align: right; }
+
+/* ===== List ===== */
+ul, ol, dl { /* margin:0 15px 15px; */ margin: 0; }
+
+li dl, dd ul { margin: 0; }
+
+li, dt, dd { /*font-size:0.8125em;*/ }
+
+li { font-size: 0.8em; }
+
+li pre, dd th, dd td, li p, li li, li dt, li dd, dd p, dd li, dd dt, dd dd { font-size: 1em; }
+
+ul ul, ol ol { margin-bottom: 0; }
+
+/* ===== Table ===== */
+table { margin: 0 0 15px; }
+
+caption { font-size: 0.8125em; }
+
+th, td { font-size: 0.8125em; }
+
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; }
+
+::selection { background: #ffff9e; }
+
+::-moz-selection { background: #ffff9e; }
+
+img::selection { background: transparent; }
+img::-moz-selection { background: transparent; }

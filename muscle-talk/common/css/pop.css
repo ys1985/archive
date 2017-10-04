@@ -1,0 +1,86 @@
+body { background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg.png) 0 0 repeat-x; }
+
+#screen { background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_screen.png) 50% 0 no-repeat; }
+
+#wrap { min-height: 1080px; position: relative; *height: 1080px; }
+
+#header { height: 185px; width: 1002px; margin: 0 auto; position: relative; }
+#header .logo { position: absolute; top: 81px; left: 0; z-index: 10; }
+#header .gmobb { position: absolute; top: 144px; right: 0; }
+
+#main { margin: 0 auto; width: 1002px; height: 643px; margin-bottom: 415px; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_wrap.png) 0 0 no-repeat; position: relative; }
+
+#contents { padding: 11px; width: 978px; height: 621px; position: relative; }
+#contents .iconSound { position: absolute; display: block; width: 34px; height: 34px; top: 35px; right: 127px; }
+#contents .btnSound { position: absolute; width: 94px; height: 28px; top: 35px; right: 31px; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_onoff.png) 0 0 no-repeat; cursor: pointer; z-index: 100; }
+#contents .btnSound.off { background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_onoff.png) -94px 0 no-repeat; }
+#contents .btnSound span { position: absolute; display: block; width: 24px; height: 24px; left: 69px; top: 2px; }
+
+.bgStar { background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_stars.png) 50% 39px no-repeat; }
+
+.backStars { position: absolute; z-index: 1; }
+
+#footer { background: url(http://cache.img.gmo.jp/muscle2013/common/css/img/bg_footer.png) 0 0 repeat-x; height: 56px; width: 100%; min-width: 760px; z-index: 10; position: absolute; left: 0; bottom: 0; }
+#footer #innerFooter { width: 760px; margin: 0 auto; height: 56px; }
+#footer .listSocial { margin-top: 18px; float: left; }
+#footer .listSocial li { float: left; }
+#footer .listSocial li.line { width: 94px; }
+#footer .listSocial li.fk { width: 120px; }
+#footer .listSocial li.twitter { width: 107px; }
+#footer .listSocial li.google { width: 77px; }
+#footer .listSocial li.bing { width: 50px; }
+#footer .copyright { float: right; color: #fff; font-size: 10px; line-height: 56px; text-shadow: #37ad00 -1px -1px 0; }
+
+#stage { width: 978px; height: 621px; position: relative; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_stage.png) 0 0 no-repeat; }
+#stage.combo5 { background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_5combo.gif) 0 0 no-repeat; }
+#stage.fever { background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_fever.gif) 0 0 no-repeat; }
+#stage .man { position: absolute; bottom: 0; left: 287px; width: 509px; height: 663px; }
+#stage .readygo .ready { position: absolute; left: 44px; top: 173px; }
+#stage .readygo .go { position: absolute; left: 584px; top: 173px; }
+#stage #musclepop { position: relative; z-index: 10; width: 978px; height: 621px; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_musclepop.png) 0 100% no-repeat; }
+#stage #musclepop .score { height: 110px; position: absolute; width: 650px; left: 137px; top: -110px; text-align: center; color: #ffdb2d; font-size: 52px; }
+#stage #musclepop .stars { position: absolute; width: 41px; height: 39px; z-index: 30; display: block; left: 0; top: 0; /* cursor: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/cursor20.cur), default; */ }
+#stage #musclepop .combo { position: absolute; z-index: 30; left: 0; top: 0; }
+#stage #musclepop .timeup { position: absolute; z-index: 20; left: 102px; top: 176px; width: 779px; height: 193px; }
+#stage #musclepop .timer { position: absolute; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_timer.png) 0 0 no-repeat; width: 937px; height: 37px; left: 22px; bottom: 12px; }
+#stage #musclepop .timer .time { position: absolute; display: block; height: 37px; line-height: 37px; left: 17px; top: 0; font-size: 28px; color: #ffdb2d; text-shadow: #785332 1px 2px 2px; }
+#stage #musclepop .timer .bar { position: absolute; display: block; height: 27px; left: 5px; top: 5px; }
+#stage #musclepop .timer .bar img { width: 0; height: 27px; }
+
+#start { width: 978px; height: 621px; position: relative; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_start.png) 0 0 no-repeat; }
+#start .title { position: absolute; left: 238px; top: 47px; width: 512px; height: 248px; z-index: 2; }
+#start .text { position: absolute; left: 173px; top: 287px; width: 633px; height: 138px; z-index: 2; }
+#start #flame1 { position: absolute; left: 349px; top: 28px; }
+#start #flame2 { position: absolute; left: 648px; top: 42px; z-index: 3; }
+#start #flame3 { position: absolute; left: 141px; top: 217px; z-index: 1; }
+#start #flame3 { position: absolute; left: 141px; top: 217px; z-index: 1; }
+#start .btnStart { position: absolute; left: 331px; top: 476px; }
+
+.opacity { position: fixed; left: 0; top: 0; background: #000; width: 100%; height: 100%; z-index: 500; display: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+
+.loading { position: fixed; left: 50%; top: 50%; z-index: 600; width: 350px; height: 350px; margin: -175px 0 0 -175px; display: none; }
+
+#result { width: 640px; height: 648px; position: fixed; left: 50%; top: 50%; z-index: 510; margin: -324px 0 0 -320px; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_result.png) 0 0 no-repeat; display: none; }
+#result .inner { padding: 41px 40px 0 40px; }
+#result .inner .score { font-size: 66px; height: 125px; line-height: 125px; text-align: center; color: #ffde32; }
+#result .inner .rank { color: #fbdebd; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_result-rank.png) 50% 0 no-repeat; height: 46px; line-height: 46px; font-size: 24px; text-align: center; margin-bottom: 24px; }
+#result .inner .rank span { font-size: 36px; }
+#result .inner .text { text-align: center; margin-bottom: 12px; }
+#result .inner .btns { padding-left: 24px; }
+#result .inner .btns li { width: 262px; float: left; }
+#result .btns2 { position: absolute; left: 40px; top: 503px; }
+#result .btns2 li { float: left; width: 293px; }
+
+#ranking { width: 640px; height: 601px; position: fixed; display: none; left: 50%; top: 50%; z-index: 520; margin: -324px 0 0 -300px; background: url(http://cache.img.gmo.jp/muscle2013/common/css/pop/bg_ranking.png) 0 0 no-repeat; }
+#ranking .btn { position: absolute; left: 188px; top: 486px; width: 277px; height: 88px; }
+#ranking .inner { padding: 41px 0 0 0; }
+#ranking .inner .title { text-align: center; margin-bottom: 25px; }
+#ranking .inner #rankList { width: 560px; margin: 0 auto; }
+#ranking .inner #rankList .list { float: left; width: 280px; }
+#ranking .inner #rankList .list li { height: 30px; line-height: 30px; font-size: 18px; color: #fff; position: relative; padding-left: 60px; }
+#ranking .inner #rankList .list li.top3 { color: #ffde32; font-size: 26px; }
+#ranking .inner #rankList .list li span { white-space: nowrap; display: block; width: 50px; position: absolute; left: 0; top: 0; text-align: right; }
+
+/* ===== Clear Fix ===== */
+#ranking .list, .btns { *zoom: 1; }
+#ranking .list:after, .btns:after { content: ""; height: 0; display: block; clear: both; }

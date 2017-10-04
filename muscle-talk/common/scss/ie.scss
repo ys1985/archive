@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.listFriend li .goTalk {
+	&:hover,
+	&:focus {
+		background: #37be00;
+	}
+}
+
+.listStamp li a {
+		&:hover,
+		&:focus {
+			background: #37be00;
+		}
+}
+
+#chatWindow {
+	background: #777A88;
+	.opponent .talks p {
+		background: #ffffff !important;
+	}
+	.user .talks p {
+		background: #b1e366;
+	}
+}
+
+.listFriend li,
+.listFriend li a
+.listStamp li,
+.listStamp li a,
+#content,
+.scrollArea,
+.listSubPanel li,
+.me,
+.listFriend,
+.lytImgLeft .contents ,
+.flicker li {
+	zoom: 1;
+}

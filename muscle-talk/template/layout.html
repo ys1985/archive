@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<?php
+
+$addTitle = "";
+
+if(preg_match('/talk.php/', $_SERVER["SCRIPT_NAME"])) {
+	$addTitle = $member->getName()."と会話中 | "; 
+} else if(preg_match('/stamp.php/', $_SERVER["SCRIPT_NAME"])) {
+	$addTitle = "スタンプショップ | ";
+} else if(preg_match('/stamp_shop.php/', $_SERVER["SCRIPT_NAME"])) {
+	$addTitle = "スタンプショップ | ";
+}
+?>
+<title><?php echo $addTitle; ?>マッスルトーク | プロバイダーならGMOとくとくBB</title>
+<meta name="keyword" content="">
+<meta name="description" content="こんなにマッスルなのは今日だけ！スタンプ無料のメッセンジャーアプリ">
+<link rel="stylesheet" href="/common/css/base.css" media="screen,print">
+<link rel="stylesheet" href="/common/css/style.css" media="screen,print">
+<script type="text/javascript" src="/common/js/jquery.js"></script>
+<script type="text/javascript" src="/common/js/jquery.easing.js"></script>
+<script type="text/javascript" src="/common/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery-animate-css-rotate-scale.js"></script>
+<script type="text/javascript" src="/common/js/run.js"></script>
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+{lang: 'ja'}
+</script>
+<script type="text/javascript">
+$(function() {
+  $("img.lazy").lazyload({
+    event : "sporty"
+  });
+});
+</script>
+
+<!--[if lte IE 9]><link rel="stylesheet" href="/common/css/ie.css" media="screen,print"><![endif]-->
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:title" content="マッスルトーク プロバイダーならGMOとくとくBB" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://talk.gmobb.jp/" />
+<meta property="og:image" content="http://cache.img.gmo.jp/muscle2013/images/top/img-mans_01.png" />
+<meta property="og:site_name" content="GMOとくとくBB" />
+<meta property="og:description" content="こんなにマッスルなのは今日だけ！スタンプ無料のメッセンジャーアプリ" />
+<meta property="fb:admins" content="100001684639259" />
+</head>
+<body>
+<div id="wrap">
+<div id="header">
+<div id="innerHeader">
+<h1 class="logo"><a href="/"><img src="http://cache.img.gmo.jp/muscle2013/common/images/logo.png" alt="マッスルトーク"></a></h1>
+<p class="logoGmoBB"><a href="http://gmobb.jp" target="_blank"><img src="http://cache.img.gmo.jp/muscle2013/common/images/logo_gmobb.png" alt="プロバイダーならGMOとくとくBB"></a></p>
+</div><!-- #innerHeader -->
+</div><!-- #header -->
+
+
+<?php include $content_template; ?>
+
+
+<div id="footer">
+<div id="innerFooter">
+<ul class="listSocial">
+<li class="line"><script type="text/javascript" src="http://media.line.naver.jp/js/line-button.js" ></script>
+<script type="text/javascript">
+new jp.naver.line.media.LineButton({"pc":true,"lang":"ja","type":"a","text":"日本よ、これがメッセンジャーアプリだ。4月1日GMOとくとくBBからマッスルトーク登場！ http://talk.gmobb.jp/","withUrl":true});
+</script></li>
+<?php
+$ua = $_SERVER['HTTP_USER_AGENT'];
+if(!preg_match('/iPhone/', $ua) && 
+   !preg_match('/iPad/', $ua) &&
+   !preg_match('/iPod/', $ua) &&
+   !preg_match('/Android/', $ua)) {
+?>
+<li class="fk"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ftalk.gmobb.jp%2F&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe></li>
+<li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://talk.gmobb.jp" data-text="こんなにマッスルなのは今日だけ！スタンプ無料のメッセンジャーアプリ #マッスルトーク リリース！http://talk.gmobb.jp/
+" data-lang="ja" data-hashtags="talkgmobb">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+<li class="google"><g:plusone size="medium" href="http://talk.gmobb.jp"></g:plusone></li>
+<li class="bing"><a href="http://talk.gmobb.jp/" class="hatena-bookmark-button" data-hatena-bookmark-title="日本よ、これがメッセンジャーアプリだ。4月1日GMOとくとくBBからマッスルトーク登場！" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+<?php
+}
+?>
+</ul><!-- .listSocial -->
+<p class="copyright">Copyright (C) <?php echo date("Y"); ?> GMO Internet, Inc. All Rights Reserved</p>
+</div><!-- #innerFooter -->
+</div><!-- #footer -->
+
+<div id="opacityTel"><!-- opacityTel --></div>
+<div id="opacityBlock"><!-- opacityBlock --></div>
+<div id="opacityShare"><!-- opacityShare --></div>
+<div class="subPanelContents">
+<div class="strap" id="fever_strap">
+<p class="strap01"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-strap_01.png" alt=""></p>
+<p class="strap02"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-strap_02.png" alt=""></p>
+<p class="strap03"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-strap_03.png" alt=""></p>
+<p class="strap04"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-strap_04.png" alt=""></p>
+<p class="strap05"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-strap_05.png" alt=""></p>
+<p class="strap06"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-strap_06.png" alt=""></p>
+<p class="strap07"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-strap_07.png" alt=""></p>
+</div><!-- .strap -->
+<div class="tel">
+<div class="inner">
+<div class="lytImgLeft">
+<p class="img"><img src="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/bettoran.png" alt=""></p>
+<div class="contents">
+<p class="title">ベテランスギル・バイザー</p>
+<p class="timer">0:00</p>
+</div><!-- .contents -->
+</div><!-- .lytImgLeft -->
+<ul>
+<li><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-tel_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-tel_02.png" alt=""></a></li>
+</ul>
+<p class="callEnd"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-tel_03.png" alt="終了"></a><p>
+</div><!-- .inner -->
+</div><!-- .tel -->
+<p class="rotate" id="fever_rotate"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-rotate_01.png" alt=""></p><!-- .rotate -->
+<p class="present" id="fever_present"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/img-prnt_01.png" alt=""></p><!-- .present -->
+<div class="block">
+<p class="img"><img src="http://cache.img.gmo.jp/muscle2013/common/images/img-block_01.png" alt=""></p>
+<p class="btnClose"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-block_01.png" alt=""></a></p>
+</div><!-- .block -->
+
+<div class="share">
+<div class="inner">
+<p>どちらで共有する？ね？どうする？どちらで共有する？ね？どうする？どちらで共有する？ね？どうする？どちらで共有する？ね？どうする？どちらで共有する？ね？どうする？</p>
+<?php
+	
+	$shareTwitter = "http://twitter.com/share?url=http://talk.gmobb.jp/muscle_talk/";
+	$shareTwitter .= "&text=こんなにマッスルなのは今日だけ！スタンプ無料のメッセンジャーアプリ #マッスルトーク リリース！";
+	$shareTwitter .= "&via=gmobb_pr&related=gmobb_p";
+	
+	$sharefk = "http://www.facebook.com/sharer.php?u=http://talk.gmobb.jp/muscle_talk/&amp;t=こんなにマッスルなのは今日だけ！スタンプ無料のメッセンジャーアプリ #マッスルトーク リリース！";	
+	
+?>
+<ul class="btns">
+<li class="twitter"><a href="javascript:void(0)" onclick="window.open('<?php echo $shareTwitter; ?>','windowtwitter','scrollbars=1,width=650,height=450');"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-twitter_01.png" alt=""></a><span><a href="https://twitter.com/" target="_blank">Twitterアカウントの作成</a></span></li>
+<li class="fk"><a href="javascript:void(0)" onclick="window.open('<?php echo $sharefk; ?>','windowtwitter','scrollbars=1,width=650,height=450');"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-fk_01.png" alt=""></a><span><a href="http://ja-jp.facebook.com/" target="_blank">Facebookアカウントの作成</a></span></li>
+</ul>
+</div>
+<p class="btnClose"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-close_01.png" alt=""></a></p>
+</div><!-- .share -->
+
+</div><!-- .subPanelContents -->
+
+</div><!-- #wrap -->
+<!-- SiteCatalyst code version: H.15.1.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/common/js/SiteCatalyst/s_code_utf8.js"></script>
+
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.server=""
+s.channel=""
+s.pageName=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop6=""
+s.prop7=""
+s.prop8=""
+s.prop9=""
+s.prop10=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.eVar6=""
+s.eVar7=""
+s.eVar8=""
+s.eVar9=""
+s.eVar10=""
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.15.1. -->
+</body>
+</html>

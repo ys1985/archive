@@ -1,0 +1,292 @@
+
+<script language="javascript" src="js/talk.js"></script>
+
+<script language="javascript" src="js/flick.js"></script>
+
+<link rel="stylesheet" href="css/flick.css" />
+
+<div id="main">
+
+
+<div id="nav">
+<p class="btnBack"><a href="./"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-friend_01.png" alt="友達" /></a></p>
+<h2><?php h($member->getName()); ?>と会話中</h2>
+<p class="btnSub"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn_sub-01.png" alt="開く" /></a></p>
+<?php include 'panels.html'; ?>
+</div><!-- #nav -->
+<div id="content">
+
+<div id="chatWindow">
+<div class="scrollArea" id="messages">
+
+
+  
+</div><!-- .scrollArea -->
+<hr id="endScroll" />
+</div><!-- #chatWindow -->
+
+<div id="chatControll">
+<div class="nav">
+<p class="btnChatStamp"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-chat_01.png" alt="スタンプ"></a></p>
+<p class="btnCloseStamp"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-chat_05.png" alt="閉じる"></a></p>
+<p class="btnChatFlicker"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-chat_02.png" alt="フリッカー"></a></p>
+
+<p class="inputArea"><input type="text" name="message" id="txt_message" /><a href="#message" class="btnClear"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-chat_04.png" alt="削除"></a></p>
+<p class="btnSend"><a href="javascript:void(0)" ><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-chat_03.png" alt="送信" id="btn_talk"></a></p>
+</div>
+<div class="stampArea">
+<div class="stamps">
+
+<div class="inner">
+<div id="stamp01" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_01.png"></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_04.png" alt=""></a></li>
+<!--li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_05.png" alt=""></a></li-->
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_08.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001_09.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp02" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002_08.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp03" class="stampBox">
+<ul>
+<!--li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_01.png" alt=""></a></li-->
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_08.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003_09.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp04" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004_08.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp05" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005_08.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp06" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006_07.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+
+<div id="stamp07" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007_08.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp08" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_01.png" alt=""></a></li>
+<!--li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_02.png" alt=""></a></li-->
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_06.png" alt=""></a></li>
+<!--li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_07.png" alt=""></a></li-->
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_08.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_09.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008_10.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp09" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0009_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0009_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0009_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0009_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0009_05.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp10" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0010_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0010_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0010_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0010_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0010_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0010_06.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp11" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011_08.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp12" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012_08.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+
+
+<div id="stamp13" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_02.png" alt=""></a></li>
+<!--li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_03.png" alt=""></a></li-->
+<!--li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_04.png" alt=""></a></li-->
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_07.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_08.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_09.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013_10.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+<div id="stamp14" class="stampBox">
+<ul>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015_01.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015_02.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015_03.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015_04.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015_05.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015_06.png" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015_07.png" alt=""></a></li>
+</ul>
+</div><!-- .stampBox -->
+
+</div><!-- .inner -->
+<p class="prevStamp"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-stp_prev_01.png" alt="＜"></a></p>
+<p class="nextStamp"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-stp_next_01.png" alt="＞"></a></p>
+</div><!-- .stamps -->
+
+<div id="stamp_categories" class="category">
+<div class="lists">
+<ul>
+<li><span><a href="#stamp01"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0001.png" alt=""></a></span></li>
+<li><span><a href="#stamp02"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0002.png" alt=""></a></span></li>
+<li><span><a href="#stamp03"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0003.png" alt=""></a></span></li>
+<li><span><a href="#stamp04"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0004.png" alt=""></a></span></li>
+<li><span><a href="#stamp05"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0005.png" alt=""></a></span></li>
+<li><span><a href="#stamp06"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0006.png" alt=""></a></span></li>
+<li><span><a href="#stamp07"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0007.png" alt=""></a></span></li>
+<li><span><a href="#stamp08"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0008.png" alt=""></a></span></li>
+<li><span><a href="#stamp09"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0009.png" alt=""></a></span></li>
+<li><span><a href="#stamp10"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0010.png" alt=""></a></span></li>
+<li><span><a href="#stamp11"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0011.png" alt=""></a></span></li>
+<li><span><a href="#stamp12"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0012.png" alt=""></a></span></li>
+<li><span><a href="#stamp13"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0013.png" alt=""></a></span></li>
+<li><span><a href="#stamp14"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/images/stamp/stmp0015.png" alt=""></a></span></li>
+
+</ul>
+</div><!-- .lists -->
+<p class="btnNext"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-next_01.png" alt="次のリスト"></a></p>
+<p class="btnAdd"><a href="stamp_shop.php"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-add_01.png" alt="スタンプを追加"></a></p>
+</div>
+</div><!-- .stampArea -->
+</div><!-- #chatControll -->
+
+
+<div class="flicker">
+<ul class="btns" id="mflick">
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/btn-flicker_01.gif" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/btn-flicker_02.gif" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/btn-flicker_03.gif" alt=""></a></li>
+<li><a href="javascript:void(0)"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/common/images/btn-flicker_04.gif" alt=""></a></li>
+</ul>
+
+
+
+<table id="mflick_popup">
+  <tr>
+    <td rowspan="2" class="left">
+      <a href="javascript:void(0)">←</a>
+    </td>
+
+    <td class="top">
+      <a href="javascript:void(0)">↑</a>
+    </td>
+    
+    <td rowspan="2" class="right">
+      <a href="javascript:void(0)">→</a>
+    </td>
+    
+  <tr>
+    <td class="bottom">
+      <a href="javascript:void(0)">↓</a>
+    </td>
+  </tr>
+  
+</table>
+
+<p class="btnFlickerHide"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-flicker_hide_01.png" alt="閉じる"></a></p>
+</div><!-- .flicker -->
+</div><!-- #content -->
+</div><!-- #main -->

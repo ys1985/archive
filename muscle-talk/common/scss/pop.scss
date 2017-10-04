@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+@import "compass/css3";
+
+@import "mixin";
+
+body {
+
+background: url(pop/bg.png) 0 0 repeat-x;
+}
+
+#screen {
+	background: url(pop/bg_screen.png) 50% 0 no-repeat;
+}
+
+#wrap {
+	min-height: 1080px;
+	position: relative;
+	*height: 1080px;
+}
+
+#header {
+	height: 185px;
+	width: 1002px;
+	margin: 0 auto;
+	position: relative;
+	.logo {
+		position: absolute;
+		top: 81px;
+		left: 0;
+		z-index: 10;
+	}
+	.gmobb {
+		position: absolute;
+		top: 144px;
+		right: 0;
+	}
+}
+
+#main {
+	margin: 0 auto;
+	width: 1002px;
+	height: 643px;
+	margin-bottom: 415px;
+	background: url(pop/bg_wrap.png) 0 0 no-repeat;
+	position: relative;
+}
+
+#contents {
+	padding: 11px;
+	width: 978px;
+	height: 621px;
+	position: relative;
+	.iconSound {
+		position: absolute;
+		display: block;
+		width: 34px;
+		height: 34px;
+		top: 35px;
+		right: 127px;
+	}
+
+	.btnSound {
+		position: absolute;
+		width: 94px;
+		height: 28px;
+		top: 35px;
+		right: 31px;
+		background: url(pop/bg_onoff.png) 0 0 no-repeat;
+		cursor: pointer;
+		&.off {
+			background: url(pop/bg_onoff.png) -94px 0 no-repeat;
+		} 
+		span {
+			position: absolute;
+			display: block;
+			width: 24px;
+			height: 24px;
+			left: 69px;
+			top: 2px;
+		}
+	}
+}
+
+.bgStar {
+	background: url(pop/bg_stars.png) 50% 39px no-repeat;
+}
+
+.backStars {
+	position: absolute;
+	z-index: 1;
+}
+
+#footer {
+	background: url(img/bg_footer.png) 0 0 repeat-x;
+	height: 56px;
+	width: 100%;
+	min-width: 760px;
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	#innerFooter {
+		width: 760px;
+		margin: 0 auto;
+		height: 56px;
+	}
+
+	.listSocial {
+		margin-top: 18px;
+		float: left;
+		li {
+			float: left;
+			&.line {
+				width: 94px;
+			}
+			&.fk {
+				width: 120px;
+			}
+			&.twitter {
+				width: 107px;
+			}
+			&.google {
+				width: 77px;
+			}
+			&.bing {
+				width: 50px;
+			}
+		}
+	}
+	
+	.copyright {
+		float: right;
+		color: #fff;
+		font-size: 10px;
+		line-height: 56px;
+		@include text-shadow(#37ad00 -1px -1px 0);
+	}
+}
+
+#stage {
+	width: 978px;
+	height: 621px;
+	position: relative;
+	background: url(pop/bg_stage.png) 0 0 no-repeat;
+
+	&.combo5 {
+		background: url(pop/bg_5combo.gif) 0 0 no-repeat;
+	}
+	
+	&.fever {
+		background: url(pop/bg_fever.gif) 0 0 no-repeat;
+	}
+
+	.man {
+		position: absolute;
+		bottom: 0;
+		left: 287px;
+		width: 509px;
+		height: 663px;	
+	}
+	.readygo {
+		.ready {
+			position: absolute;
+			left: 44px;
+			top: 173px;
+		}
+		.go {
+			position: absolute;
+			left: 584px;
+			top: 173px;
+		}
+	}
+
+	#musclepop {
+		
+		position: relative;
+		z-index: 10;
+		width: 978px;
+		height: 621px;
+		background: url(pop/bg_musclepop.png) 0 100% no-repeat;
+		
+		.score {
+			height: 110px;
+			position: absolute;
+			width: 650px;
+			left: 137px;
+			top: -110px;
+			text-align: center;
+			color: #ffdb2d;
+			font-size: 52px;
+		}
+
+		.stars {
+			position: absolute;
+			width: 41px;
+			height: 39px;
+			z-index: 30;
+			display: block;
+			left: 0;
+			top: 0;
+		}
+
+		.combo {
+			position: absolute;
+			z-index: 30;
+			left: 0;
+			top: 0;
+		}
+
+		.timer {
+			position: absolute;
+			background: url(pop/bg_timer.png) 0 0 no-repeat;
+			width: 937px;
+			height: 37px;
+			left: 22px;
+			bottom: 12px;
+			.time {
+				position: absolute;
+				display: block;
+				height: 37px;
+				line-height: 37px;
+				left: 17px;
+				top: 0;
+				font-size: 28px;
+				color: #ffdb2d;
+				@include text-shadow(#785332 1px 2px 2px);
+			}
+			.bar {
+				position: absolute;
+				display: block;
+				height: 27px;
+				left: 5px;
+				top: 5px;
+				img {
+					width: 0;
+					height: 27px;
+				}
+			}
+		}
+	}
+	
+}
+
+#start {
+	width: 978px;
+	height: 621px;
+	position: relative;
+	background: url(pop/bg_start.png) 0 0 no-repeat;
+
+	.title {
+		position: absolute;
+		left: 238px;
+		top: 47px;
+		width: 512px;
+		height: 248px;
+		z-index: 2;
+	}
+
+	.text {
+		position: absolute;
+		left: 173px;
+		top: 287px;
+		width: 633px;
+		height: 138px;
+		z-index: 2;
+	}
+
+	#flame1 {
+		position: absolute;
+		left: 349px;
+		top: 28px;
+	}
+
+	#flame2 {
+		position: absolute;
+		left: 648px;
+		top: 42px;
+		z-index: 3;
+	}
+
+	#flame3 {
+		position: absolute;
+		left: 141px;
+		top: 217px;
+		z-index: 1;
+	}
+
+	#flame3 {
+		position: absolute;
+		left: 141px;
+		top: 217px;
+		z-index: 1;
+	}
+
+	.btnStart {
+		position: absolute;
+		left: 331px;
+		top: 476px;
+	}
+
+}

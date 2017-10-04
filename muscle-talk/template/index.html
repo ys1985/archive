@@ -1,0 +1,52 @@
+
+<div id="main">
+<div id="nav">
+<!--p class="btnBack"><a href="."><img src="common/images/btn_back-01.png" alt="" /></a></p-->
+<h2>友だち（<span class="numFrnd"><?php h(count($members)); ?></span>）</h2>
+<p class="btnSub"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn_sub-01.png" alt="" /></a></p>
+<?php include 'panels.html'; ?>
+</div><!-- #nav -->
+<div id="content">
+<div class="scrollArea">
+
+
+  <p class="me"><span class="infoMe"><img src="<?php h_icon($me->getIcon(), 's'); ?>" alt=""> <span class="myName">あなた</span></span> </p>
+  
+  <h3 class="hdg01">友だち（<span class="numFrnd"><?php h(count($members)); ?></span>）</h3>
+  
+  <ul class="listFriend">
+    <?php foreach($members as $key => $m): ?>
+    <?php if(!$m->isBlocked()): ?>
+    <li><a href="#popup<?php h($key + 1); ?>" class="goTalk"><img src="http://cache.img.gmo.jp/muscle2013/muscle_talk/<?php h_icon($m->getIcon(), 'm'); ?>" alt="" /><?php h($m->getName()); ?></a><span class="btns"><a href="talk.php?mid=<?php h($m->getId()); ?>"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-talk_01.png" alt="トーク"></a></span></li>
+    <?php else: ?>
+    <li><a href="#popup<?php h($key + 1); ?>" class="goTalk"><img src="http://cache.img.gmo.jp/muscle2013/muscle_talk/<?php h_icon($m->getIcon(), 'm'); ?>" alt="" /><?php h($m->getName()); ?></a><span class="btns"><a href="block.php?m=<?php h($m->getId()); ?>&b=0#member_<?php h($m->getId()); ?>"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-bolck_01.png" alt="block済み"></a></span></li>
+    <?php endif; ?>
+    <?php endforeach; ?>
+
+  </ul>
+
+
+  
+</div><!-- .scrollArea -->
+</div><!-- #content -->
+</div><!-- #main -->
+
+<div class="opacity"><!-- opacity --></div>
+<?php foreach($members as $key => $m): ?>
+<div id="popup<?php h($key + 1); ?>" class="popup">
+<div class="inner">
+<div class="lytImgLeft">
+<p class="img"><img class="lazy" src="http://cache.img.gmo.jp/muscle2011/images/bg.gif" data-original="http://cache.img.gmo.jp/muscle2013/muscle_talk/<?php h_icon($m->getIcon(), 'l'); ?>" alt=""></p>
+<div class="contents">
+<p class="title"><?php h($m->getName()); ?></p>
+<p class="text"><?php h($m->getDescription()); ?></p>
+</div>
+</div>
+<ul class="listPopup">
+<li><a href="block.php?m=<?php h($m->getId()); ?>&b=1#member_<?php h($m->getId()); ?>" class="btnBlock"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-popup_01.png" alt="ブロック"></a></li>
+<li><a href="talk.php?mid=<?php h($m->getId()); ?>" class="btnTalk"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-popup_02.png" alt="トーク"></a></li>
+</ul>
+<p class="closePopup"><a href="javascript:void(0)"><img src="http://cache.img.gmo.jp/muscle2013/common/images/btn-close_01.png" alt=""></a></p>
+</div>
+</div><!-- .popup -->
+<?php endforeach; ?>

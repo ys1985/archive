@@ -1,0 +1,11 @@
+.listFriend li .goTalk:hover, .listFriend li .goTalk:focus { background: #37be00; }
+
+.listStamp li a:hover, .listStamp li a:focus { background: #37be00; }
+
+#chatWindow { background: #777A88; }
+#chatWindow .opponent .talks p { background: #ffffff !important; }
+#chatWindow .user .talks p { background: #b1e366; }
+
+.stampArea .stamps .inner .stampBox ul li img { _width: 150px; }
+
+.listFriend li, .listFriend li a .listStamp li, .listStamp li a, #content, .scrollArea, .listSubPanel li, .me, .listFriend, .lytImgLeft .contents, .flicker li { zoom: 1; }

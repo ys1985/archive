@@ -1,0 +1,66 @@
+MM000	あなた	自分です	images/my/my001.png
+usr014	イギリシュ	将来について、広めにアドバイス募集中♪	images/friend/usr014.png
+usr005	ちんぺい	女の子からのトークのみまってるぜ！	images/friend/usr005.png
+usr035	流輝～RUKI～	バーカ。俺の前で無理すんな。	images/friend/usr035.png
+usr013	キャﾗﾒﾙマｷｱート	最近、仕事がハードなので返事遅れるかもしれません。よろしく！	images/friend/usr013.png
+usr036	ジャミロ・ツトム	邦楽はあんまりわかんないんだよね	images/friend/usr036.png
+usr029	アーモンド	実家の犬が逃げた！	images/friend/usr029.png
+usr052	喜屋武	沖縄にいってきました	images/friend/usr052.png
+usr053	パーカー	だれか家泊めて～	images/friend/usr053.png
+usr054	マック	出戻りで～す。仲良くしてね	images/friend/usr054.png
+usr057	ピュアホワイト	やたら犬に吠えられるっす！	images/friend/usr057.png
+usr067	教頭	趣味でバンドもやってます。	images/friend/usr067.png
+usr098	ゴラン	シュコーシュコシュコシュコココ	images/friend/usr098.png
+usr101	セガール	ひたすら沈黙	images/friend/usr101.png
+usr102	ジャンパー	少年ジャンプ立ち読みしてます。	images/friend/usr102.png
+usr103	テミスティー	社畜の毎日です。AKBは俺の青春！	images/friend/usr103.png
+usr104	ロッサム	出会い求めてません 。絶対に。	images/friend/usr104.png
+usr105	チェリマック	こう見えて社長です	images/friend/usr105.png
+usr106	ロックウェル	音楽って音を楽しむってことでしょう？	images/friend/usr106.png
+usr107	宍戸丈	教師やってます。	images/friend/usr107.png
+usr108	エコ	愛する人を絶対に守る	images/friend/usr108.png
+usr109	クリスミゼル	弟がほしい	images/friend/usr109.png
+usr110	モーイポン	最近寝付きが悪いなり！	images/friend/usr110.png
+usr111	ガツリン	今年こそ仮免とるぞ！	images/friend/usr111.png
+usr003	椎名くん	今日から会社員！バリバリ働くどー( ・`д・´)ｷﾘｯ	images/friend/usr003.png
+usr004	ダイゴ	お前が落としたのは海賊版のDVDか？それともこのリッピングしたDVDか？	images/friend/usr004.png
+usr006	ぶったにー	週3で歌舞伎町いってます！	images/friend/usr006.png
+usr007	ベイベー	君にロックオン	images/friend/usr007.png
+usr008	いるか	前世はイルカやってました。前世で絡んだことある方、気軽にメッセちょうだい	images/friend/usr008.png
+usr009	シューゾー	テニスを軽々しく口にするな！もっと熱くなれよ！	images/friend/usr009.png
+usr010	リストラ	すごくポジティブな性格です。	images/friend/usr010.png
+usr011	天津	フェイスブックもやってます。	images/friend/usr011.png
+usr012	ニソク・ホコウ	どうも～ニコ生主やってます(´･ω･｀) 主にゲーム実況やってますよかったら見てね	images/friend/usr012.png
+usr015	四中のカルピス兄弟	おもちゃも服も二人でシェアしてます。	images/friend/usr015.png
+usr016	ちゃおず	ルネサンスが好きな永遠の料理研究家。今度本だします（未定）（笑）	images/friend/usr016.png
+usr017	トリニータ	いらっしゃい。	images/friend/usr017.png
+usr018	ホワイトタイガー	アラサー、アラフォーのお友達募集中！いっしょに洞窟いきませんか？	images/friend/usr018.png
+usr019	アリ	大体のパンチは今まで避けてきた。	images/friend/usr019.png
+usr020	チャベルト	わかってる。ぜんぶわかってる。	images/friend/usr020.png
+usr021	カルキン	子役やってた時期があります。	images/friend/usr021.png
+usr022	Mr.3ドル	円安キタコレ	images/friend/usr022.png
+usr023	ゴミ・ガガリ	留学に興味有	images/friend/usr023.png
+usr024	リュドミロヴィチ	犬より猫派	images/friend/usr024.png
+usr025	スネーク	噂話が大好き。スネークだ。	images/friend/usr025.png
+usr026	キヨ	ヤキウダイスキ！	images/friend/usr026.png
+usr027	ルーフィーD	ワンピース大好き！あと下ネタ多いのでダメな人はブロック推奨。	images/friend/usr027.png
+usr028	クリス	コレねミキプルーンの苗木	images/friend/usr028.png
+usr030	マイク	息子のピーターの為、タフなプロバイダーを常々探しています。いいのがあったら教えてね	images/friend/usr030.png
+usr031	シュリンプゾウ	この間、某繁華街でフルボッコにされたお。	images/friend/usr031.png
+usr032	かんち	東京ラブジェネレーションストーリー始まる。	images/friend/usr032.png
+usr033	ズンドコきよし	ズンズンズンズンズンズンズンズンズンズンドコ	images/friend/usr033.png
+usr034	イダラヒム	テレフォンオペレーター1万人を常にモニタリング。お客様第一。【理由を聞かずに即謝罪 】がモットーでございます。	images/friend/usr034.png
+usr037	ジェームス	今日も仕事か・・・	images/friend/usr037.png
+usr039	マッチ	動物の霊にとりつかれやすいです。同じような人いるかな？	images/friend/usr039.png
+usr040	のりP	シングルリリース第2弾！白いくすり好評発売中だよ！	images/friend/usr040.png
+usr041	ケロッグ	食べ歩きを趣味に各地に出没中。見かけたらご飯ごちそうして～	images/friend/usr041.png
+usr042	セグウェー	"スキ → 映画鑑賞、読書キライ → すぐ会おうって言ってくる人"	images/friend/usr042.png
+usr044	ワニブチ	世の中くだらねえ。	images/friend/usr044.png
+usr045	新芽	よっこいせー！	images/friend/usr045.png
+usr046	ドナルド	60秒にチャレンジ！	images/friend/usr046.png
+usr047	トップ・ダンディ	ゲッツゲッツ	images/friend/usr047.png
+usr048	アップ	あーそれっそれそれ～ここっ！	images/friend/usr048.png
+usr049	ラモンHG	オッケエエエエーー	images/friend/usr049.png
+usr050	ティーバッグ	君も、みたいか？	images/friend/usr050.png
+usr051	ゴロー	さすらってます	images/friend/usr051.png
+

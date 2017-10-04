@@ -1,0 +1,798 @@
+@charset "utf-8";
+
+/* ===== Heading ===== */
+
+.hdg01 {
+	font-size: 24px;
+	padding: 15px;
+	border-top: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	color: #595959;
+	@include background-image(linear-gradient(top, #ffffff 0%, #d9d9d9 100%));
+}
+
+/* ===== Lists ===== */
+
+.listFriend {
+	border-bottom: 1px solid #fff;
+	li {
+		position: relative;
+		border-bottom: 1px solid #bebebe;
+		.goTalk {
+			display: block;
+			font-size: 36px;
+			color: #000;
+			text-decoration: none;
+			border-top: 1px solid #fff;
+			padding: 20px 15px;
+			min-height: 90px;
+			&:hover,
+			&:focus {
+				color: #fff;
+				border-top: 1px solid #68d700;
+				@include text-shadow(#1f5700 -1px -1px 0);
+				@include background-image(linear-gradient(top, #68d700 0%, #20a800 100%));
+			}
+
+			img {
+				vertical-align: middle;
+				margin-right: 20px;
+				width: 90px;
+			}
+		}
+
+		.btns {
+			position: absolute;
+			top: 50%;
+			right: 14px;
+			margin-top: -35px;
+		}
+	}		
+}
+
+
+.listStamp {
+	li {
+		position: relative;
+		border-bottom: 1px solid #bebebe;
+		a {
+			border-top: 1px solid #fff;
+			display: block;
+			color: #000;
+			text-decoration: none;
+			padding: 25px 20px;
+			img.thumb {
+				float: left;
+				width: 90px;
+				margin-right: 20px;
+			}
+			.title {
+				font-size: 36px;
+				
+			}
+			&:hover,
+			&:focus {
+				color: #fff;
+				border-top: 1px solid #68d700;
+				@include text-shadow(#1f5700 -1px -1px 0);
+				@include background-image(linear-gradient(top, #68d700 0%, #20a800 100%));
+			}
+
+			.arrow {
+				position: absolute;
+				right: 18px;
+				top: 50%;
+				margin-top: -16px;
+			}
+
+			
+
+			.btns {
+				display: block;
+				img {
+					vertical-align: middle;
+					margin-right: 8px;
+				}
+			}
+		}
+
+		.likes {
+			position: absolute;
+			right: 64px;
+			top: 50%;
+			margin-top: -10px;
+		}
+	}
+}
+
+.stampItem {
+	li {
+		float: left;
+		width: 25%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+
+.listBtn2 {
+	margin: 50px 0 30px;
+	li {
+		float: left;
+		width: 50%;
+		text-align: center;
+	}
+}
+
+
+
+/* ===== Boxs ===== */
+
+.scrollArea {
+	position: relative;
+}
+
+.me {
+	position: relative;
+	.infoMe {
+		padding: 20px 15px;
+		display: block;
+		font-size: 36px;
+		color: #000;
+		img {
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+	}
+	
+	.btns {
+		position: absolute;
+		top: 50%;
+		right: 14px;
+		margin-top: -35px;
+	}
+}
+
+.opacity {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+	background: #000;
+	@include opacity(0.5);
+}
+
+.opacity,
+#opacity,
+#opacityTel,
+#opacityBlock,
+#opacityShare {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+	background: #000;
+	@include opacity(0.5);
+}
+
+.popup {
+	width: 707px;
+	height: 571px;
+	z-index: 15;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url(img/bg_popup.png) 0 0 no-repeat;
+	display: none;
+	margin-left: -353px;
+	margin-top: -285px;
+	.inner {
+		padding: 20px 0 0 20px;
+		.lytImgLeft {
+			height: 314px;
+			padding: 45px 60px 0;
+			.img {
+				width: 190px;
+			}
+		}
+		.listPopup {
+			li {
+				float: left;
+			}
+		}
+	}
+
+	.closePopup {
+		position: absolute;
+		right: 40px;
+		top: 37px;
+	}
+}
+
+/* ===== Buttons ===== */
+
+.btnMore {
+	text-align: center;
+	margin: 30px 0;
+}
+
+/* ===== Layout ===== */
+
+.lytImgLeft {
+	.img {
+		float: left;
+		margin-right: 45px;
+	}
+	.contents {
+		overflow: hidden;
+	}
+
+	.title {
+		font-size: 36px;
+		margin-bottom: 25px;
+		width: 330px;
+	}
+	
+}
+
+.stampInfoBox {
+	padding: 60px 17px 0 17px;
+	.contents {
+		float: right;
+		width: 373px;
+
+		.titles {
+			
+			margin-bottom: 20px;
+			border-bottom: 1px solid #fff;
+			span {
+				border-bottom: 1px solid #bebebe;
+				display: block;
+				padding-bottom: 5px;
+				font-size: 40px;
+			}
+		}
+		
+		p {
+			font-size: 20px;
+			&.fk {
+				margin-bottom: 10px;
+			}
+			&.get {
+				margin-bottom: 15px;
+			}
+		}
+
+		
+
+		.labels {
+			margin-bottom: 25px;
+		}
+	}
+	.img {
+		width: 300px;
+		text-align: center;
+		float: left;
+	}
+}
+
+
+/* ===== Chat ===== */
+
+#chatWindow {
+	position: relative;
+	.scrollArea {
+		padding: 20px 0;
+	}
+	background: url(img/bg_chat.png) 0 0 repeat-y;
+
+	.opponent, .user {
+		position: relative;
+		margin-bottom: 15px;
+
+		.name {
+			font-size: 16px;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+		.thumb {
+			position: absolute;
+			top: 0;
+		}
+
+		.talks {
+			position: relative;
+			p {
+				font-size: 20px;
+				max-width: 460px;
+				padding: 25px;
+				min-height: 26px;
+				@include border-radius(20px);
+				@include box-shadow(#000000 1px 1px 5px);
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 7px;
+				}
+			}
+			
+		}
+
+	}
+
+	.opponent {
+		padding-left: 155px;
+
+		.thumb {
+			left: 18px;
+			top: 0;
+		}
+
+		.stamp {
+			float: left;
+		}
+
+		.talks {
+			padding-left: 20px;
+			p {
+				float: left;
+				@include background-image(linear-gradient(top, #dcdcdc 0%, #ffffff 30%, #ffffff 71%, #dcdcdc 100%));
+				&:after {
+					width: 20px;
+					height: 33px;
+					left: 0;
+					background: url(img/bg_opponent.png) 0 0 no-repeat;
+				}
+			}
+			
+		}
+	}
+	.user {
+		.name {
+			text-align: right;
+		}
+
+		.stamp {
+			float: right;
+		}
+
+		.thumb {
+			right: 45px;
+		}
+
+		padding-right: 115px;
+		.talks {
+			padding-right: 22px;
+			
+			p {
+				float: right;
+				@include background-image(linear-gradient(top, #8fd345 0%, #b1e366 30%, #b1e366 71%, #8fd345 100%));
+				&:after {
+					right: 0;
+					width: 22px;
+					height: 33px;
+					background: url(img/bg_user.png) 100% 0 no-repeat;
+				}
+			}
+			
+		}
+	}
+	
+}
+
+#chatControll {
+	
+	background: url(img/bg_controll.png) 0 0 repeat-x;
+	position: absolute;
+	left: -10px;
+	bottom: -10px;
+	width: 760px;
+	overflow: hidden;
+	.nav {
+		height: 132px;
+		padding: 0 25px; 	
+		.btnChatStamp {
+			width: 72px;
+			float: left;
+			margin-right: 9px;
+			margin-top: 22px;
+		}
+		.btnCloseStamp {
+			width: 72px;
+			float: left;
+			margin-right: 9px;
+			margin-top: 22px;
+			display: none;
+		}
+		.btnChatFlicker {
+			width: 72px;
+			float: left;
+			margin-top: 22px;
+			margin-right: 20px;
+		}
+
+		.inputArea {
+			background: url(img/bg-chat_input_01.png) 0 0 repeat-x;
+			float: left;
+			width: 390px;
+			height: 90px;
+			margin-top: 22px;
+			position: relative;
+			input {
+				width: 320px;
+				height: 90px;
+				border: none;
+				background: none;
+				font-size: 26px;
+				padding-left: 15px;
+				outline: none;	
+			}
+			.btnClear {
+				position: absolute;
+				right: 14px;
+				top: 50%;
+				margin-top: -20px;
+			}
+
+		}
+
+		.btnSend {
+			width: 133px;
+			margin-top: 29px;
+			float: right;
+		}
+	}
+
+	.stampArea {
+		height: 504px;
+		display: none;
+		.stamps {
+			padding-top: 7px;
+			height: 407px;
+			margin: 0 10px;
+			background: #fff;
+			position: relative;
+			
+			.prevStamp, .nextStamp {
+				position: absolute;
+				top: 50%;
+				margin-top: -30px;
+			}
+
+			.prevStamp {
+				left: 6px;
+			}
+
+			.nextStamp {
+				right: 6px;
+			}
+
+			width: 740px;
+			.inner {
+				height: 400px;
+				
+				width: 740px;
+				overflow: hidden;
+				.stampBox {
+					height: 400px;
+					width: 740px;
+					ul {
+						height: 400px;
+						li {
+							float: left;
+							width: 185px;
+							height: 200px;
+							text-align: center;
+							overflow: hidden;
+						}
+					}
+				}
+				
+			}
+		}
+		.category {
+			position: relative;
+			height: 90px;
+			background: url(img/bg_category.png) 0 0 repeat-x;
+			.btnAdd {
+				position: absolute;
+				top: 50%;
+				right: 26px;
+				margin-top: -35px;
+			}
+
+			.btnNext {
+				position: absolute;
+				top: 50%;
+				right: 132px;
+				margin-top: -19px;
+			}
+			.lists {
+				overflow: hidden;
+				width: 598px;
+				height: 90px;
+				margin-left: 10px;
+				ul {
+					
+					height: 90px;
+					position: relative;
+					left: 0;
+					top: 0;
+					li {
+						float: left;
+						width: 119px;
+						border-right: 1px solid #626262;
+
+						&.current span a{
+							@include opacity(0.7);
+						}
+						span {
+							height: 90px;
+							display: block;
+							border-right: 1px solid #0a0a0a;
+							a {
+								display: block;
+								height: 90px;
+								text-align: center;
+								img {
+									margin-top: 11px;
+								}
+
+								&:hover img, &:focus img {
+									@include opacity(0.7);
+								}
+								
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+.flicker {
+	height: 496px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	display: none;
+	background: url(img/bg_flicker.png) 0 0 no-repeat;
+	li {
+		width: 370px;
+		float: left;
+		a {
+			display: block;
+			
+			img {
+				display: block;
+				@include opacity(0);
+			}
+
+			&:hover, &:focus {
+				img {
+					@include opacity(1);
+				}
+			}
+		}
+		
+	}
+
+	.btnFlickerHide {
+		position: absolute;
+		top: 20px;
+		left: 17px;
+		width: 72px;
+		height: 91px;
+	}
+}
+
+/* ===== Sub Panel Contents ===== */
+
+.subPanelContents {
+
+	.tel {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 709px;
+		height: 600px;
+		margin-left: -354px;
+		margin-top: -350px;
+		background: url(img/bg_tel.png) 0 0 no-repeat;
+		z-index: 20;
+		display: none;
+		.inner {
+			padding: 20px;
+			.lytImgLeft {
+				color: #fff;
+				height: 241px;
+				padding: 40px 40px 0 40px;
+				background: url(img/bg-tel_inner.png) 0 0 no-repeat;
+				.img {
+					width: 190px;
+					margin-right: 40px;
+				}
+				.contents {
+					width: 359px;
+					.title {
+						margin-bottom: 10px;
+					}
+					.timer {
+						color: #5c646f;
+						font-size: 36px;
+						@include text-shadow(#1a1e24 -1px -1px 0);
+					}
+				}
+			}
+			ul {
+				height: 165px;
+				li {
+					width: 334px;
+					float: left;
+					height: 165px;
+				
+				}
+			}
+			img {
+				display: block;
+			}
+		}
+	}
+
+	.block {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 698px;
+		height: 516px;
+		margin-left: -349px;
+		margin-top: -300px;
+		display: none;
+		z-index: 20;
+		.btnClose {
+			position: absolute;
+			top: 30px;
+			right: 30px;
+		}
+	}
+
+	.share {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 708px;
+		height: 446px;	
+		margin-left: -354px;
+		margin-top: -223px;
+		background: url(img/bg_share.png) 0 0 no-repeat;
+		display: none;
+		z-index: 20;
+		.btnClose {
+			position: absolute;
+			right: 40px;
+			top: 40px;
+		}
+		.inner {
+			padding: 100px 60px 0 60px;
+			p {
+				font-size: 20px;
+				margin-bottom: 25px;
+			}
+			.btns {
+				li {
+					width: 294px;
+					text-align: left;
+					float: left;
+					span {
+						text-align: center;
+						display: block;
+						margin-top: 20px;
+						a {
+							color: #3fc500;
+							text-decoration: underline;
+							background: url(img/icon-arrow_02.png) 0 0 no-repeat;
+							line-height: 18px;
+							padding-left: 20px;
+							&:hover, &:focus {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.present {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 526px;
+		height: 716px;
+		margin-left: -263px;
+		display: none;
+		
+	}
+
+	.rotate {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 468px;
+		height: 470px;
+		margin-top: -235px;
+		display: none;
+	}
+	
+	.strap {
+		p {
+			position: absolute;
+			left: 50%;
+			top: 85px;
+			z-index: 20;
+			display: none;
+			&.strap01 {
+				margin-left: -727px;
+				width: 357px;
+				height: 885px;
+			}
+			&.strap02 {
+				margin-left: -600px;
+				width: 246px;
+				height: 695px;
+			}
+			&.strap03 {
+				margin-left: -545px;
+				width: 428px;
+				height: 369px;
+			}
+			&.strap04 {
+				margin-left: -225px;
+				width: 319px;
+				height: 621px;
+			}
+			&.strap05 {
+				margin-left: 162px;
+				width: 454px;
+				height: 798px;
+			}
+			&.strap06 {
+				margin-left: 127px;
+				width: 137px;
+				height: 810px;
+			}
+			&.strap07 {
+				margin-left: 440px;
+				width: 193px;
+				height: 700px;
+			}
+		}
+	}
+}
+
+/* ===== Input ===== */
+
+input#myName {
+	font-size: 36px;
+	width: 350px;
+	border: 1px solid #bebebe;
+}
+
+/* ===== Line ===== */
+hr.line {
+	height: 2px;
+	border-bottom: 1px solid #fff;
+	background: #bebebe;
+	margin-bottom: 30px;
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* ===== Clear Fix ===== */
+
+#innerHeader,
+#innerFooter,
+.listSubPanel,
+.lytImgLeft,
+.lytImgRight,
+.listSocial,
+.listStamp li a,
+.stampItem,
+.stampInfoBox,
+.listBtn2,
+#chatWindow .opponent,
+#chatWindow .user,
+#chatWindow .talks {
+	*zoom: 1;
+	&:after {
+		content:"";
+		height:0;
+		display:block;
+		clear:both;
+	}
+}

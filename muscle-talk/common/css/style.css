@@ -1,0 +1,216 @@
+/* ===== Structure ===== */
+body { background: #efefef url(http://img.gmo.jp/muscle2013/common/css/img/bg.png) 0 0 repeat-x; }
+
+#wrap { position: relative; }
+
+#header { background: #efefef url(http://img.gmo.jp/muscle2013/common/css/img/bg.png) 0 0 repeat-x; height: 86px; position: relative; width: 100%; min-width: 760px; z-index: 1; }
+#header #innerHeader { width: 760px; margin: 0 auto; padding: 4px 0 0 0; }
+#header .logo { float: left; padding-left: 10px; width: 78px; }
+#header .logoGmoBB { float: right; width: 108px; padding: 0 2px 0 0; }
+
+body.cacao { background: #efefef url(http://img.gmo.jp/muscle2013/common/css/img/bg_cacao.png) 0 0 repeat-x; }
+body.cacao #header { background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_cacao.png) 0 0 repeat-x; }
+body.cacao #header .logo { float: left; padding-left: 10px; width: 85px; height: 75px; }
+body.cacao #header .logo a { display: block; width: 85px; height: 75px; background: url(http://img.gmo.jp/muscle2013/common/css/img/logo_cacao.png) 0 0 no-repeat; }
+body.cacao #header .logo img { display: none; }
+
+#footer { background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_footer.png) 0 0 repeat-x; height: 56px; width: 100%; min-width: 760px; position: relative; z-index: 1; }
+#footer #innerFooter { width: 760px; margin: 0 auto; height: 56px; }
+#footer .listSocial { margin-top: 18px; float: left; }
+#footer .listSocial li { float: left; }
+#footer .listSocial li.line { width: 94px; }
+#footer .listSocial li.fk { width: 120px; }
+#footer .listSocial li.twitter { width: 107px; }
+#footer .listSocial li.google { width: 77px; }
+#footer .listSocial li.bing { width: 50px; }
+#footer .copyright { float: right; color: #fff; font-size: 10px; line-height: 56px; text-shadow: #37ad00 -1px -1px 0; }
+
+#main { width: 760px; margin: 0 auto; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_main.png) 0 0 repeat-y; position: relative; }
+
+#content { margin: 0 10px; border-bottom: 10px solid #1c1c1c; height: 400px; position: relative; }
+
+#nav { height: 92px; position: relative; z-index: 2; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_nav.png) 0 0 repeat-x; }
+#nav h2 { font-size: 36px; line-height: 92px; text-align: center; color: #fff; text-shadow: #1e1f1f -1px -1px 0; }
+#nav .btnBack { position: absolute; z-index: 1; left: 26px; top: 15px; }
+#nav .btnSub { position: absolute; z-index: 1; right: 26px; top: 15px; }
+#nav .listSubPanel { position: absolute; width: 724px; z-index: 3; top: 91px; left: 10px; display: none; }
+#nav .listSubPanel li { float: left; }
+#nav .listSubPanel li img { display: block; }
+
+/* ===== Heading ===== */
+.hdg01 { font-size: 24px; padding: 15px; border-top: 1px solid #bebebe; border-bottom: 1px solid #bebebe; color: #595959; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9d9d9)); background-image: -webkit-linear-gradient(top, #ffffff 0%, #d9d9d9 100%); background-image: -moz-linear-gradient(top, #ffffff 0%, #d9d9d9 100%); background-image: -o-linear-gradient(top, #ffffff 0%, #d9d9d9 100%); background-image: linear-gradient(top, #ffffff 0%, #d9d9d9 100%); }
+
+/* ===== Lists ===== */
+.listFriend { border-bottom: 1px solid #fff; }
+.listFriend li { position: relative; border-bottom: 1px solid #bebebe; }
+.listFriend li .goTalk { display: block; font-size: 36px; color: #000; text-decoration: none; border-top: 1px solid #fff; padding: 20px 15px; min-height: 90px; }
+.listFriend li .goTalk:hover, .listFriend li .goTalk:focus { color: #fff; border-top: 1px solid #68d700; text-shadow: #1f5700 -1px -1px 0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #68d700), color-stop(100%, #20a800)); background-image: -webkit-linear-gradient(top, #68d700 0%, #20a800 100%); background-image: -moz-linear-gradient(top, #68d700 0%, #20a800 100%); background-image: -o-linear-gradient(top, #68d700 0%, #20a800 100%); background-image: linear-gradient(top, #68d700 0%, #20a800 100%); }
+.listFriend li .goTalk img { vertical-align: middle; margin-right: 20px; width: 90px; }
+.listFriend li .btns { position: absolute; top: 50%; right: 14px; margin-top: -35px; }
+
+.listStamp li { position: relative; border-bottom: 1px solid #bebebe; }
+.listStamp li a { border-top: 1px solid #fff; display: block; color: #000; text-decoration: none; padding: 25px 20px; }
+.listStamp li a img.thumb { float: left; width: 90px; margin-right: 20px; }
+.listStamp li a .title { font-size: 36px; }
+.listStamp li a:hover, .listStamp li a:focus { color: #fff; border-top: 1px solid #68d700; text-shadow: #1f5700 -1px -1px 0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #68d700), color-stop(100%, #20a800)); background-image: -webkit-linear-gradient(top, #68d700 0%, #20a800 100%); background-image: -moz-linear-gradient(top, #68d700 0%, #20a800 100%); background-image: -o-linear-gradient(top, #68d700 0%, #20a800 100%); background-image: linear-gradient(top, #68d700 0%, #20a800 100%); }
+.listStamp li a .arrow { position: absolute; right: 18px; top: 50%; margin-top: -16px; }
+.listStamp li a .btns { display: block; }
+.listStamp li a .btns img { vertical-align: middle; margin-right: 8px; }
+.listStamp li .likes { position: absolute; right: 64px; top: 50%; margin-top: -10px; }
+
+.stampItem li { float: left; width: 180px; text-align: center; margin-bottom: 20px; }
+.stampItem li img { width: 150px; }
+
+.listBtn2 { margin: 50px 0 30px; }
+.listBtn2 li { float: left; width: 50%; text-align: center; }
+
+.btnStampShare { margin: 50px 0 30px; text-align: center; }
+
+/* ===== Boxs ===== */
+.scrollArea { position: relative; }
+
+.me { position: relative; }
+.me .infoMe { padding: 20px 15px; display: block; font-size: 36px; color: #000; }
+.me .infoMe img { vertical-align: middle; margin-right: 20px; }
+.me .btns { position: absolute; top: 50%; right: 14px; margin-top: -35px; }
+
+.opacity { width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none; background: #000; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
+
+.opacity, #opacity, #opacityTel, #opacityBlock, #opacityShare, #opacityShareStamp { width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none; background: #000; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
+
+.popup { width: 707px; height: 571px; z-index: 15; position: absolute; left: 50%; top: 50%; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_popup.png) 0 0 no-repeat; display: none; margin-left: -353px; margin-top: -285px; }
+.popup .inner { padding: 20px 0 0 20px; }
+.popup .inner .lytImgLeft { height: 314px; padding: 45px 60px 0; }
+.popup .inner .lytImgLeft .img { width: 190px; }
+.popup .inner .listPopup li { float: left; }
+.popup .closePopup { position: absolute; right: 40px; top: 37px; }
+
+/* ===== Buttons ===== */
+.btnMore { text-align: center; margin: 30px 0; }
+
+/* ===== Layout ===== */
+.lytImgLeft .img { float: left; margin-right: 45px; }
+.lytImgLeft .contents { overflow: hidden; }
+.lytImgLeft .title { font-size: 36px; margin-bottom: 25px; width: 330px; }
+
+.stampInfoBox { padding: 60px 17px 0 17px; }
+.stampInfoBox .contents { float: right; width: 373px; }
+.stampInfoBox .contents .titles { margin-bottom: 20px; border-bottom: 1px solid #fff; }
+.stampInfoBox .contents .titles span { border-bottom: 1px solid #bebebe; display: block; padding-bottom: 5px; font-size: 40px; }
+.stampInfoBox .contents p { font-size: 20px; }
+.stampInfoBox .contents p.fk { margin-bottom: 10px; }
+.stampInfoBox .contents p.get { margin-bottom: 15px; }
+.stampInfoBox .contents .labels { margin-bottom: 25px; }
+.stampInfoBox .img { width: 300px; text-align: center; float: left; }
+
+/* ===== Chat ===== */
+#chatWindow { position: relative; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_chat.png) 0 0 repeat-y; }
+#chatWindow .scrollArea { padding: 20px 0; }
+#chatWindow .opponent, #chatWindow .user { position: relative; margin-bottom: 15px; }
+#chatWindow .opponent .name, #chatWindow .user .name { font-size: 16px; color: #fff; margin-bottom: 10px; }
+#chatWindow .opponent .thumb, #chatWindow .user .thumb { position: absolute; top: 0; }
+#chatWindow .opponent .talks, #chatWindow .user .talks { position: relative; }
+#chatWindow .opponent .talks p, #chatWindow .user .talks p { font-size: 20px; max-width: 460px; padding: 25px; min-height: 26px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: black 1px 1px 5px; -moz-box-shadow: black 1px 1px 5px; box-shadow: black 1px 1px 5px; }
+#chatWindow .opponent .talks p:after, #chatWindow .user .talks p:after { content: ""; display: block; position: absolute; top: 7px; }
+#chatWindow .opponent { padding-left: 155px; }
+#chatWindow .opponent .thumb { left: 18px; top: 0; }
+#chatWindow .opponent .stamp { float: left; }
+#chatWindow .opponent .talks { padding-left: 20px; }
+#chatWindow .opponent .talks p { float: left; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dcdcdc), color-stop(30%, #ffffff), color-stop(71%, #ffffff), color-stop(100%, #dcdcdc)); background-image: -webkit-linear-gradient(top, #dcdcdc 0%, #ffffff 30%, #ffffff 71%, #dcdcdc 100%); background-image: -moz-linear-gradient(top, #dcdcdc 0%, #ffffff 30%, #ffffff 71%, #dcdcdc 100%); background-image: -o-linear-gradient(top, #dcdcdc 0%, #ffffff 30%, #ffffff 71%, #dcdcdc 100%); background-image: linear-gradient(top, #dcdcdc 0%, #ffffff 30%, #ffffff 71%, #dcdcdc 100%); }
+#chatWindow .opponent .talks p:after { width: 20px; height: 33px; left: 0; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_opponent.png) 0 0 no-repeat; }
+#chatWindow .user { padding-right: 155px; }
+#chatWindow .user .name { text-align: right; }
+#chatWindow .user .stamp { float: right; }
+#chatWindow .user .thumb { right: 45px; }
+#chatWindow .user .talks { padding-right: 22px; }
+#chatWindow .user .talks p { float: right; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8fd345), color-stop(30%, #b1e366), color-stop(71%, #b1e366), color-stop(100%, #8fd345)); background-image: -webkit-linear-gradient(top, #8fd345 0%, #b1e366 30%, #b1e366 71%, #8fd345 100%); background-image: -moz-linear-gradient(top, #8fd345 0%, #b1e366 30%, #b1e366 71%, #8fd345 100%); background-image: -o-linear-gradient(top, #8fd345 0%, #b1e366 30%, #b1e366 71%, #8fd345 100%); background-image: linear-gradient(top, #8fd345 0%, #b1e366 30%, #b1e366 71%, #8fd345 100%); }
+#chatWindow .user .talks p:after { right: 0; width: 22px; height: 33px; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_user.png) 100% 0 no-repeat; }
+
+#chatControll { background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_controll.png) 0 0 repeat-x; position: absolute; left: -10px; bottom: -10px; width: 760px; overflow: hidden; }
+#chatControll .nav { height: 132px; padding: 0 25px; }
+#chatControll .nav .btnChatStamp { width: 72px; float: left; margin-right: 9px; margin-top: 22px; }
+#chatControll .nav .btnCloseStamp { width: 72px; float: left; margin-right: 9px; margin-top: 22px; display: none; }
+#chatControll .nav .btnChatFlicker { width: 72px; float: left; margin-top: 22px; margin-right: 20px; }
+#chatControll .nav .inputArea { background: url(http://img.gmo.jp/muscle2013/common/css/img/bg-chat_input_01.png) 0 0 repeat-x; float: left; width: 390px; height: 90px; margin-top: 22px; position: relative; }
+#chatControll .nav .inputArea input { width: 320px; height: 90px; border: none; background: none; font-size: 26px; padding-left: 15px; outline: none; }
+#chatControll .nav .inputArea .btnClear { position: absolute; right: 14px; top: 50%; margin-top: -20px; }
+#chatControll .nav .btnSend { width: 133px; margin-top: 29px; float: right; }
+#chatControll .stampArea { height: 504px; display: none; }
+#chatControll .stampArea .stamps { padding-top: 7px; height: 407px; margin: 0 10px; background: #fff; position: relative; width: 740px; }
+#chatControll .stampArea .stamps .prevStamp, #chatControll .stampArea .stamps .nextStamp { position: absolute; top: 50%; margin-top: -30px; }
+#chatControll .stampArea .stamps .prevStamp { left: 6px; }
+#chatControll .stampArea .stamps .nextStamp { right: 6px; }
+#chatControll .stampArea .stamps .inner { height: 400px; width: 740px; overflow: hidden; }
+#chatControll .stampArea .stamps .inner .stampBox { height: 400px; width: 740px; }
+#chatControll .stampArea .stamps .inner .stampBox ul { height: 400px; }
+#chatControll .stampArea .stamps .inner .stampBox ul li { float: left; width: 185px; height: 200px; text-align: center; overflow: hidden; }
+#chatControll .stampArea .stamps .inner .stampBox ul li img { max-width: 150px; }
+#chatControll .stampArea .category { position: relative; height: 90px; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_category.png) 0 0 repeat-x; }
+#chatControll .stampArea .category .btnAdd { position: absolute; top: 50%; right: 26px; margin-top: -35px; }
+#chatControll .stampArea .category .btnNext { position: absolute; top: 50%; right: 132px; margin-top: -19px; }
+#chatControll .stampArea .category .lists { overflow: hidden; width: 598px; height: 90px; margin-left: 10px; }
+#chatControll .stampArea .category .lists ul { height: 90px; position: relative; left: 0; top: 0; }
+#chatControll .stampArea .category .lists ul li { float: left; width: 119px; border-right: 1px solid #626262; }
+#chatControll .stampArea .category .lists ul li.current span a { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+#chatControll .stampArea .category .lists ul li span { height: 90px; display: block; border-right: 1px solid #0a0a0a; }
+#chatControll .stampArea .category .lists ul li span a { display: block; height: 90px; text-align: center; }
+#chatControll .stampArea .category .lists ul li span a img { margin-top: 11px; }
+#chatControll .stampArea .category .lists ul li span a:hover img, #chatControll .stampArea .category .lists ul li span a:focus img { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+
+.flicker { height: 496px; position: absolute; left: 0; bottom: 0; z-index: 10; display: none; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_flicker.png) 0 0 no-repeat; }
+.flicker li { width: 370px; float: left; }
+.flicker li a { display: block; }
+.flicker li a img { display: block; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.flicker li a:hover img, .flicker li a:focus img { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+.flicker .btnFlickerHide { position: absolute; top: 20px; left: 17px; width: 72px; height: 91px; }
+
+/* ===== Sub Panel Contents ===== */
+.subPanelContents .tel { position: absolute; left: 50%; top: 50%; width: 709px; height: 600px; margin-left: -354px; margin-top: -350px; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_tel.png) 0 0 no-repeat; z-index: 20; display: none; }
+.subPanelContents .tel .inner { padding: 20px; }
+.subPanelContents .tel .inner .lytImgLeft { color: #fff; height: 241px; padding: 40px 40px 0 40px; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg-tel_inner.png) 0 0 no-repeat; }
+.subPanelContents .tel .inner .lytImgLeft .img { width: 190px; margin-right: 40px; }
+.subPanelContents .tel .inner .lytImgLeft .contents { width: 359px; }
+.subPanelContents .tel .inner .lytImgLeft .contents .title { margin-bottom: 10px; }
+.subPanelContents .tel .inner .lytImgLeft .contents .timer { color: #5c646f; font-size: 36px; text-shadow: #1a1e24 -1px -1px 0; }
+.subPanelContents .tel .inner ul { height: 165px; }
+.subPanelContents .tel .inner ul li { width: 334px; float: left; height: 165px; }
+.subPanelContents .tel .inner img { display: block; }
+.subPanelContents .block { position: absolute; left: 50%; top: 50%; width: 698px; height: 516px; margin-left: -349px; margin-top: -300px; display: none; z-index: 20; }
+.subPanelContents .block .btnClose { position: absolute; top: 30px; right: 30px; }
+.subPanelContents .share { position: absolute; left: 50%; top: 50%; width: 708px; height: 446px; margin-left: -354px; margin-top: -223px; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_share.png) 0 0 no-repeat; display: none; z-index: 20; }
+.subPanelContents .share .btnClose { position: absolute; right: 40px; top: 40px; }
+.subPanelContents .share .inner { padding: 100px 60px 0 60px; }
+.subPanelContents .share .inner p { font-size: 20px; margin-bottom: 25px; }
+.subPanelContents .share .inner .btns li { width: 294px; text-align: left; float: left; }
+.subPanelContents .share .inner .btns li span { text-align: center; display: block; margin-top: 20px; }
+.subPanelContents .share .inner .btns li span a { color: #3fc500; text-decoration: underline; background: url(http://img.gmo.jp/muscle2013/common/css/img/icon-arrow_02.png) 0 0 no-repeat; line-height: 18px; padding-left: 20px; }
+.subPanelContents .share .inner .btns li span a:hover, .subPanelContents .share .inner .btns li span a:focus { text-decoration: none; }
+.subPanelContents .present { position: absolute; left: 50%; bottom: 0; width: 526px; height: 716px; margin-left: -263px; display: none; }
+.subPanelContents .rotate { position: absolute; left: 0; top: 50%; width: 468px; height: 470px; margin-top: -235px; display: none; }
+.subPanelContents .strap p { position: absolute; left: 50%; top: 85px; z-index: 20; display: none; }
+.subPanelContents .strap p.strap01 { margin-left: -727px; width: 357px; height: 885px; }
+.subPanelContents .strap p.strap02 { margin-left: -600px; width: 246px; height: 695px; }
+.subPanelContents .strap p.strap03 { margin-left: -545px; width: 428px; height: 369px; }
+.subPanelContents .strap p.strap04 { margin-left: -225px; width: 319px; height: 621px; }
+.subPanelContents .strap p.strap05 { margin-left: 162px; width: 454px; height: 798px; }
+.subPanelContents .strap p.strap06 { margin-left: 127px; width: 137px; height: 810px; }
+.subPanelContents .strap p.strap07 { margin-left: 440px; width: 193px; height: 700px; }
+
+#shareStamp { position: absolute; left: 50%; top: 50%; width: 708px; height: 446px; margin-left: -354px; margin-top: -223px; background: url(http://img.gmo.jp/muscle2013/common/css/img/bg_share.png) 0 0 no-repeat; display: none; z-index: 20; }
+#shareStamp .btnClose { position: absolute; right: 40px; top: 40px; }
+#shareStamp .inner { padding: 100px 60px 0 60px; }
+#shareStamp .inner p { font-size: 20px; margin-bottom: 25px; }
+#shareStamp .inner .btns li { width: 294px; text-align: left; float: left; }
+#shareStamp .inner .btns li span { text-align: center; display: block; margin-top: 20px; }
+#shareStamp .inner .btns li span a { color: #3fc500; text-decoration: underline; background: url(http://img.gmo.jp/muscle2013/common/css/img/icon-arrow_02.png) 0 0 no-repeat; line-height: 18px; padding-left: 20px; }
+#shareStamp .inner .btns li span a:hover, #shareStamp .inner .btns li span a:focus { text-decoration: none; }
+
+/* ===== Input ===== */
+input#myName { font-size: 36px; width: 350px; border: 1px solid #bebebe; }
+
+/* ===== Line ===== */
+hr.line { height: 2px; border-bottom: 1px solid #fff; background: #bebebe; margin-bottom: 30px; }
+
+/* ===== Clear Fix ===== */
+#innerHeader, #innerFooter, .listSubPanel, .lytImgLeft, .lytImgRight, .listSocial, .listStamp li a, .stampItem, .stampInfoBox, .listBtn2, #chatWindow .opponent, #chatWindow .user, #chatWindow .talks, .btns { *zoom: 1; }
+#innerHeader:after, #innerFooter:after, .listSubPanel:after, .lytImgLeft:after, .lytImgRight:after, .listSocial:after, .listStamp li a:after, .stampItem:after, .stampInfoBox:after, .listBtn2:after, #chatWindow .opponent:after, #chatWindow .user:after, #chatWindow .talks:after, .btns:after { content: ""; height: 0; display: block; clear: both; }
